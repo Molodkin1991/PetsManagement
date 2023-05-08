@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="2" author="nik">
+
+        <insert
+                tableName="users">
+            <column name="creation_time" value="now()"/>
+            <column name="modification_time" value="now()"/>
+            <column name="username" value="T1000"/>
+            <column name="owners_name" value="Sarah Connor"/>
+            <column name="password" value="12345"/>
+        </insert>
+        <insert
+                tableName="users">
+            <column name="creation_time" value="now()"/>
+            <column name="modification_time" value="now()"/>
+            <column name="username" value="ivan777"/>
+            <column name="owners_name" value="Ivan Ivanov"/>
+            <column name="password" value="000"/>
+        </insert>
+        <insert
+                tableName="users">
+            <column name="creation_time" value="now()"/>
+            <column name="modification_time" value="now()"/>
+            <column name="username" value="agent007"/>
+            <column name="owners_name" value="Kolja Petrov"/>
+            <column name="password" value="54321"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
